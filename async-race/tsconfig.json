@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "target": "ES6",                                
+    "forceConsistentCasingInFileNames": true,          
+    "strict": true,                                    
+    "noImplicitAny": true,                            
+    "skipLibCheck": true,    
+    "allowSyntheticDefaultImports": true,
+    "lib": [
+      "es2021",
+    ]                           
+  },
+  "include": ["src", "declarations.d.ts"],
+
+}

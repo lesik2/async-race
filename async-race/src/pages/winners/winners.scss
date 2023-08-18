@@ -1,0 +1,50 @@
+.winner-img{
+  height: 27px;
+  transform: scale(-1,1);
+  -webkit-mask: url(../../assets/winner.svg) no-repeat center;
+  mask: url(../../assets/winner.svg) no-repeat center;
+  margin-right: 30px;
+}
+.current-page{
+  order: 2;
+}
+#current-page{
+  display: flex;
+  flex-direction: column;
+}
+.table-winners{
+  width: 700px;
+  margin-top: 15px;
+  order: 3;
+}
+.table-header{
+  font-size: 15px;
+  color: #ffffff;
+  font-weight: bold;
+  background-color: #262626;
+
+}
+.table-header>td:first-child{
+  width: 90px;
+}
+.table-header>td:last-child{
+  width: 180px;
+  cursor: pointer;
+  user-select: none;
+}
+.table-header>td:nth-child(2){
+  width: 55px;
+}
+.table-header>td:nth-child(3){
+  width: 100px;
+}
+.table-header>td:nth-child(4){
+  width: 100px;
+  cursor: pointer;
+  user-select: none;
+}
+.row-table{
+  font-weight: bold;
+  border-bottom: 2px dashed #ffffff ;
+  font-size: 13px;
+}

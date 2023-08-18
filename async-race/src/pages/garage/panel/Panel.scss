@@ -1,0 +1,79 @@
+
+.panel-garage{
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.create-wrapper{
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+.edit-wrapper{
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+.input-panel{
+  width: 150px;
+  height: 23px;
+  outline: none;
+  border-radius: 5px;
+  border: 2px solid gray;
+  background-color:#e6f7ff;
+  
+}
+.panel-btn{
+  width: 65px;
+  height: 22px;
+  display: block;
+  background-color: #f0f5f5;
+  color: #000000;
+  font-weight: bold;
+  font-size: 12px;
+  border-radius: 3px;
+  text-align: center;
+  border-bottom: 5px solid #476b6b;
+  transition: border-bottom 0.05s, transform 0.05s;
+  text-decoration: none;
+  cursor: pointer;
+  user-select: none;
+}
+.color-picker{
+  display: block;
+  width: 45px;
+  border: 1px solid #bfbfbf;
+  border-radius: 5px;
+}
+
+.race-panel{
+  display: flex;
+  gap: 10px;
+}
+.race-panel>a:last-child{
+  width: 125px;
+  background-color: #f0f5f5;
+  border-bottom: 5px solid #476b6b;
+}
+.race-panel>a{
+  background-color: #ccff99;
+  border-bottom: 5px solid #336600;
+  
+}
+.race-panel>a.clicked{
+  border-bottom: 0;
+  transform: translateY(5px);
+}
+.race-panel>a.disabled{
+  cursor:default;
+    color: #808080;
+    background-color: #a6a6a6;
+    border-color: #666666;
+}
+.input-panel.disabled{
+  cursor:default;
+  color: #808080;
+  background-color: #cccccc;
+}

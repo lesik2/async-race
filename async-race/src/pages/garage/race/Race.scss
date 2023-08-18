@@ -1,0 +1,161 @@
+.race-wrapper{
+  order: 3;
+}
+.current-page{
+  font-size: 20px;
+  padding-left: 5px;
+  font-weight: bold;
+}
+.navigation{
+  order: 4;
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  gap: 5px;
+  width: 130px;
+  margin-left: 5px;
+  .choose-btn{
+    background-color: #ccff99;
+    border-bottom: 5px solid #336600;
+  }
+  .disabled{
+    cursor:default;
+    color: #808080;
+    background-color: #a6a6a6;
+    border-color: #666666;
+  }
+  .clicked{
+    border-bottom: 0;
+    transform: translateY(5px);
+  }
+}
+.car-img{
+  width: 70px;
+  height: 20px;
+  transform: scale(-1,1);
+  -webkit-mask: url(../../../assets/car.svg) no-repeat center;
+  mask: url(../../../assets/car.svg) no-repeat center;
+  margin-top: 25px;
+  position: absolute;
+  top: -1px;
+  left: 55px;
+}
+.road{
+  padding: 5px 5px 0 5px;
+}
+.editor{
+  display: flex;
+  align-items: center;
+  gap:3px;
+  .car-name{
+    color: #800000;
+    font-size: 15px;
+    margin-left: 10px;
+  }
+}
+.choose-btn{
+  width: 65px;
+  height: 22px;
+  display: block;
+  background-color: #f0f5f5;
+  color: #000000;
+  font-weight: bold;
+  font-size: 12px;
+  border-radius: 3px;
+  text-align: center;
+  border-bottom: 5px solid #476b6b;
+  transition: border-bottom 0.05s, transform 0.05s;
+  text-decoration: none;
+  cursor: pointer;
+  user-select: none;
+}
+.race{
+  height: 45px;
+  position: relative;
+  display: flex;
+  gap: 2px;
+  margin-top: 5px;
+  border-bottom: 3px dashed ;
+  .game-btn{
+    display: block;
+    width: 23px;
+    height: 25px;
+    border-radius: 5px;
+    background: transparent;
+    font-weight: 500;
+    font-size: 17px;
+    cursor: pointer;
+    transition: color 0.2s, border 0.2s;
+    border: black 2px solid;
+    outline: none;
+    padding: 0;
+    user-select: none;
+  }
+  .game-btn:hover{
+    color:#9999ff;
+    border: #9999ff 2px solid;
+  }
+  .game-btn.disabled{
+    cursor: default;
+    color:#666666;
+    border:  #666666 2px solid;
+    pointer-events: none;
+  }
+}
+.game-btn.car-start{
+  color: #ffd700;
+  border:#ffd700 2px solid;
+}
+.game-btn.car-end{
+  color:#800000;
+  border:#800000 2px solid;
+}
+.clicked{
+  border-bottom: 0;
+  transform: translateY(5px);
+}
+.finish-svg{
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 3px;
+  right: 90px;
+  transform: rotate(-15deg);
+  filter: invert(13%) sepia(100%) saturate(3674%) hue-rotate(354deg) brightness(99%) contrast(119%);
+  z-index: 2;
+}
+.message-wrapper{
+  position: fixed;
+  width: 550px;
+  height: 100px;
+  top: 50%;
+  left: 50%;
+  margin-top: -50px; 
+  margin-left: -275px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 50;
+  overflow: hidden;
+  opacity: 0;
+  transition: opacity 0.05s, overflow 0.05s;
+
+}
+.message-wrapper.open{
+  overflow: visible;
+  opacity: 1;
+}
+.message-winner{
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #fff;
+  text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 21px #fff,
+      0 0 42px #0fa,
+      0 0 82px #0fa,
+      0 0 92px #0fa,
+      0 0 102px #0fa,
+      0 0 151px #0fa;
+  font-size: 36px;
+}

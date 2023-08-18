@@ -1,0 +1,26 @@
+.header-container{
+  width: 100%;
+}
+.header-wrapper{
+  display: flex;
+  gap: 10px;
+  padding: 10px 5px 5px 5px;
+}
+.header-link{
+  width: 70px;
+  height: 23px;
+  display: block;
+  background-color: #ccff99;
+  color: #000000;
+  font-weight: bold;
+  font-size: 14px;
+  border-radius: 3px;
+  text-align: center;
+  border-bottom: 5px solid #336600;
+  transition: border-bottom 0.05s, transform 0.05s;
+  text-decoration: none;
+}
+.clicked{
+  border-bottom: 0;
+  transform: translateY(5px);
+}
